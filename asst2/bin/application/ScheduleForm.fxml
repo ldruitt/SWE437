@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ScheduleFormController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="116.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GMU quiz retake scheduler for class swe437" wrappingWidth="367.6005859375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <MenuButton fx:id="dateMenu" layoutX="33.0" layoutY="216.0" mnemonicParsing="false" text="Date">
+              <items>
+                <MenuItem id="act1" fx:id="act1" mnemonicParsing="false" text="Action 1" />
+                <MenuItem fx:id="act2" mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Text layoutX="124.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can sign up for quiz retakes within the next two weeks." />
+            <Text layoutX="124.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name (as it appears on the class roster)," />
+            <Text layoutX="124.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="then select which date, time, and quiz you wish to retake from the following list." />
+            <Text layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today is" wrappingWidth="47.58203125" />
+            <TextField fx:id="date" layoutX="62.0" layoutY="105.0" />
+            <Text layoutX="14.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently scheduling quizzes for the next two weeks, until " />
+            <TextField fx:id="endDate" layoutX="335.0" layoutY="136.0" />
+            <Text layoutX="14.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <TextField fx:id="name" layoutX="62.0" layoutY="165.0" />
+            <MenuButton fx:id="timeMenu" layoutX="137.0" layoutY="216.0" mnemonicParsing="false" text="Time">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="quizMenu" layoutX="236.0" layoutY="216.0" mnemonicParsing="false" text="Quiz">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
